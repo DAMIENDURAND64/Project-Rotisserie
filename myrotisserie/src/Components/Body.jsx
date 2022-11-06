@@ -3,6 +3,8 @@ import Image from "../Images/essaimobile.JPG";
 import { useState } from "react";
 import Lieu from "./Lieu-Body";
 import ProduitsBody from "./Produits-Body";
+import Tarifs from "./Tarifs";
+import Evenementiel from "./Evenementiel";
 
 function Body() {
   const [isChangeSpot, setChangeSpot] = useState(true);
@@ -16,6 +18,8 @@ function Body() {
       <img src={Image} alt="blabla" className="h-28 w-full object-cover" />
       <Lieu isChangeSpot={isChangeSpot} HandleChangeSpot={HandleChangeSpot} />
       <ProduitsBody />
+      <Tarifs />
+      <Evenementiel />
     </div>
   );
 }

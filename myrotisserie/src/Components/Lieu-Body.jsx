@@ -6,7 +6,7 @@ function Lieu({ HandleChangeSpot, isChangeSpot }) {
       <div>
         <div className="flex flex-col justify-center bg-header bg-cover">
           <h1 className="text-white flex justify-center font-bold p-2">
-            Ou me trouver ?
+            Où trouver la rôtisserie Harana ?
           </h1>
           <div className="flex flex-col items-center m-2 gap-2">
             <div className="bg-[#fdf9e4] rounded-md w-2/3 text-sm flex flex-col ">

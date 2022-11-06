@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../Images/Logo-Iparla.jpeg";
 import Logo1 from "../Images/Label_rouge.jpeg";
 import logo2 from "../Images/Logo-Manex.png";
+import logo3 from "../Images/Logo3.JPG";
 
 export default function ProduitsBody() {
   return (
@@ -36,9 +37,20 @@ export default function ProduitsBody() {
           className="w-32 h-28  object-contain"
         />
         <p className="text-sm">
-          Le porc Manex me provient de la ferme Belarrea située à St Etienne de
-          Baigorri. Je vous propose a la rôtissoire l'Echine ou le Jarret .
+          Le porc Manex provient de la ferme Belarrea située à St Etienne de
+          Baigorri. Je vous propose a la rôtissoire l'Echine ou le Jarret.
         </p>
+      </div>
+      <div className="flex items-center mt-4 w-11/12 gap-2">
+        <p className="text-sm">
+          Les viandes sont accompagnées de pommes de terre cuite vapeur puis
+          sautées a la poêle.
+        </p>
+        <img
+          src={logo3}
+          alt="pommes de terre sautées"
+          className="w-32 h-28  object-contain"
+        />
       </div>
     </div>
   );
