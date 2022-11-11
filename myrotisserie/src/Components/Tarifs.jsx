@@ -2,7 +2,7 @@ import React from "react";
 
 function Tarifs() {
   return (
-    <div className=" bg-header w-full h-auto bg-cover ">
+    <div className=" w-full h-auto bg-cover ">
       <h1 className="text-white text-center font-extrabold">TARIFS</h1>
       <ul className=" m-6 bg-[#fdf9e4] rounded-md">
         <li>Poulet Iparla : 21€ / pièce</li>

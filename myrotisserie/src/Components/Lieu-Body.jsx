@@ -4,7 +4,7 @@ function Lieu({ HandleChangeSpot, isChangeSpot }) {
   return (
     <div>
       <div>
-        <div className="flex flex-col justify-center bg-header bg-cover">
+        <div className="flex flex-col justify-center ">
           <h1 className="text-white flex justify-center font-bold p-2">
             Où trouver la rôtisserie Harana ?
           </h1>

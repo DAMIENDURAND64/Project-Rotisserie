@@ -14,7 +14,10 @@ function Body() {
   }
 
   return (
-    <div className="bg-body w-full bg-cover flex flex-col gap-4 h-auto">
+    <div
+      className="bg-test bg-fixed bg-no-repeat bg-cover
+     w-full flex flex-col gap-4 h-auto"
+    >
       <img src={Image} alt="blabla" className="h-28 w-full object-cover" />
       <Lieu isChangeSpot={isChangeSpot} HandleChangeSpot={HandleChangeSpot} />
       <ProduitsBody />

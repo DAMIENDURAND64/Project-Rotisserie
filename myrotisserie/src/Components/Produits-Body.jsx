@@ -14,14 +14,14 @@ export default function ProduitsBody() {
           alt="logo de poulet"
           className="w-20 h-20 rounded-full"
         />
-        <p className="text-sm">
+        <p className="text-sm text-white">
           Les poulets sont fourni par une ferme locale familiale situé a
           Saint-Martin d'Arrosa. Les poulets IPARLA ont minimum 91 jours
           d'élevage en plein air.
         </p>
       </div>
       <div className=" flex justify-center items-center mt-4 w-11/12 gap-2">
-        <p className="text-sm">
+        <p className="text-sm text-white">
           Nos poulets Label Rouge sont issues du Sud-Ouest uniquement.
         </p>
         <img
@@ -36,13 +36,13 @@ export default function ProduitsBody() {
           alt="le porc manex"
           className="w-32 h-28  object-contain"
         />
-        <p className="text-sm">
+        <p className="text-sm text-white">
           Le porc Manex provient de la ferme Belarrea située à St Etienne de
           Baigorri. Je vous propose a la rôtissoire l'Echine ou le Jarret.
         </p>
       </div>
       <div className="flex items-center mt-4 w-11/12 gap-2">
-        <p className="text-sm">
+        <p className="text-sm text-white">
           Les viandes sont accompagnées de pommes de terre cuite vapeur puis
           sautées a la poêle.
         </p>
