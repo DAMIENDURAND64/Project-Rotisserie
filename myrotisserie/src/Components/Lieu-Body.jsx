@@ -1,15 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Lieu({ HandleChangeSpot, isChangeSpot }) {
   return (
     <div>
       <div>
-        <div className="flex flex-col justify-center ">
-          <h1 className="text-white flex justify-center font-bold p-2">
-            Où trouver la rôtisserie Harana ?
+        <div className="flex flex-col justify-center items-center ">
+          <h1 className="text-white text-base font-bold h-14 w-full justify-center items-center flex bg-black-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-black-600">
+            OU TROUVER LA ROTISSERIE HARANA ?
           </h1>
           <div className="flex flex-col items-center m-2 gap-2">
-            <div className="bg-[#fdf9e4] rounded-md w-2/3 text-sm flex flex-col ">
+            <div className="bg-[#906948] text-white rounded-md w-2/3 text-sm flex flex-col bg-opacity-80 ">
               <p className="flex justify-center underline font-bold">
                 Mercredi au Vendredi :
               </p>
@@ -17,7 +18,7 @@ function Lieu({ HandleChangeSpot, isChangeSpot }) {
                 Midi et Soir au rond-point de Bassussarry
               </span>
             </div>
-            <div className="bg-[#fdf9e4] rounded-md w-2/3 text-sm">
+            <div className="bg-[#906948] text-white rounded-md w-2/3 text-sm bg-opacity-80 ">
               <p className="flex justify-center underline font-bold">
                 Samedi et Dimanche :
               </p>
@@ -45,18 +46,20 @@ function Lieu({ HandleChangeSpot, isChangeSpot }) {
           ></iframe>
         </div>
         <div className="flex justify-around h-16 items-center">
-          <button
-            className="bg-header rounded-md text-xs w-24 h-8 text-white font-semibold"
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            className="bg-[#906948] rounded-md text-xs w-24 h-8 text-white font-semibold bg-opacity-80 "
             onClick={HandleChangeSpot}
           >
             Rond-point Bassussarry
-          </button>
-          <button
-            className="bg-header rounded-md text-xs w-24 h-8 text-white font-semibold"
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            className="bg-[#906948] rounded-md text-xs w-24 h-8 text-white font-semibold bg-opacity-80 "
             onClick={HandleChangeSpot}
           >
             Boulangerie Osses
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>
