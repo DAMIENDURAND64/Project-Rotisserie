@@ -6,12 +6,12 @@ function Lieu({ HandleChangeSpot, isChangeSpot }) {
     <div className="">
       <div className="py-6">
         <div className="flex flex-col justify-center items-center ">
-          <h1 className="text-white text-base md:text-xl font-bold h-14 w-full justify-center items-center flex bg-black-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-black-600">
+          <h1 className="text-white text-base md:text-2xl font-bold h-14 w-full justify-center items-center flex bg-black-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-black-600">
             OU TROUVER LA ROTISSERIE HARANA ?
           </h1>
           <div className="flex flex-col items-center py-4 gap-3 md:flex-row md:gap-32">
-            <div className="bg-[#906948] text-white rounded-md w-2/3 text-sm flex flex-col bg-opacity-80 md:text-lg md:h-24 md:flex md:items-center">
-              <p className="flex justify-center underline font-bold ">
+            <div className="bg-[#906948] text-white rounded-md w-2/3 text-sm flex flex-col bg-opacity-80 md:text-lg md:h-24 md:flex md:justify-center md:items-center">
+              <p className="flex justify-center underline font-bold">
                 Mercredi au Vendredi :
               </p>
               <span className="flex text-center">
