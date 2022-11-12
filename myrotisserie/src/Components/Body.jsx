@@ -1,10 +1,10 @@
 import React from "react";
-import Image from "../Images/essaimobile.JPG";
 import { useState } from "react";
 import Lieu from "./Lieu-Body";
 import ProduitsBody from "./Produits-Body";
 import Tarifs from "./Tarifs";
 import Evenementiel from "./Evenementiel";
+import Carousel from "./Carousel";
 
 function Body() {
   const [isChangeSpot, setChangeSpot] = useState(true);
@@ -15,10 +15,10 @@ function Body() {
 
   return (
     <div
-      className="bg-test bg-fixed bg-no-repeat bg-cover
-     w-full flex flex-col gap-4 h-auto"
+      className="bg-background bg-fixed bg-cover
+     w-full flex flex-col h-auto"
     >
-      <img src={Image} alt="blabla" className="h-28 w-full object-cover" />
+      <Carousel />
       <Lieu isChangeSpot={isChangeSpot} HandleChangeSpot={HandleChangeSpot} />
       <ProduitsBody />
       <Tarifs />
