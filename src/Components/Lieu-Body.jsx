@@ -58,7 +58,7 @@ function Lieu({ HandleChangeSpot, isChangeSpot }) {
                 className="bg-[#906948] rounded-md text-xs w-24 h-8 text-white font-semibold bg-opacity-80 md:ml-20 md:text-base md:h-16 md:w-32"
                 onClick={HandleChangeSpot}
               >
-                Boulangerie Osses
+                Boulangerie Ossès
               </motion.button>
             </div>
           </div>

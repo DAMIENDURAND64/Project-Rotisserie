@@ -6,7 +6,7 @@ import Image from "next/image";
 function Header() {
   return (
     <div className=" bg-header w-full h-24 bg-cover flex justify-around items-center md:h-32 ">
-      <div className="w-32 h-16 md:w-48 md:h-20 relative">
+      <div className="w-36 h-16 md:w-60 md:h-24 relative ">
         <Image
           layout="fill"
           alt="La rotisserie Harana au Pays basque qui propose des poulets rotis fermier locaux mais aussi du jarret ou echine de porc Manex"
@@ -21,7 +21,9 @@ function Header() {
         >
           Téléphone
         </motion.a>
-        <p className="font-bold text-white text-xl">06.70.84.29.35</p>
+        <p className="font-bold text-white text-xs md:text-lg">
+          06.70.84.29.35
+        </p>
       </div>
     </div>
   );
