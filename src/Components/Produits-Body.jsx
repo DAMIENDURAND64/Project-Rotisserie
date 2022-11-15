@@ -12,7 +12,7 @@ export default function ProduitsBody() {
   const isInView = useInView(ref, { once: true });
   return (
     <div ref={ref}>
-      <div className="flex flex-col justify-center items-center py-6">
+      <div className="flex flex-col justify-center items-center py-6 ">
         <h1 className="text-white text-lg md:text-2xl font-bold h-14 w-full  justify-center items-center flex bg-black-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-black-600">
           NOS PRODUITS
         </h1>
@@ -35,8 +35,8 @@ export default function ProduitsBody() {
             </div>
 
             <p className="text-base  text-white md:text-lg">
-              Les poulets sont fourni par une ferme locale familiale situé a
-              Saint-Martin d&apos;Arrosa. Les poulets IPARLA ont minimum 91
+              Les poulets sont fournis par une ferme locale familiale située à
+              Saint-Martin d&apos;Arrossa. Les poulets IPARLA ont minimum 91
               jours d&apos;élevage en plein air.
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function ProduitsBody() {
             className=" flex justify-center items-center w-11/12 my-2 md:gap-4"
           >
             <p className="text-base text-white md:text-lg">
-              Nos poulets Label Rouge sont issues du Sud-Ouest uniquement.
+              Nos poulets Label Rouge sont issus du Sud-Ouest uniquement.
             </p>
             <div className="min-w-[80px]   relative h-20 rounded-full overflow-hidden md:min-w-[144px] md:h-[144px]">
               <Image
@@ -78,10 +78,9 @@ export default function ProduitsBody() {
               />
             </div>
             <p className="text-base text-white md:text-lg">
-              Le porc Manex provient de la ferme Belarrea située à St Etienne de
-              Baigorri.
+              Le porc Manex nous vient de Saint Etienne de Baigorri.
               <br className="hidden md:block" /> Je vous propose a la rôtissoire
-              l&apos;Echine ou le Jarret.
+              l&apos;échine ou le jarret.
             </p>
           </div>
           <hr className="w-4/6 my-2"></hr>
@@ -92,7 +91,7 @@ export default function ProduitsBody() {
               opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
-            className="flex flex-col items-center w-11/12  mt-2 md:flex-row-reverse md:w-4/6  "
+            className="flex flex-col justify-center items-center w-full  mt-2 md:flex-row-reverse md:w-4/6  "
           >
             <div className="w-48 h-28 relative overflow-hidden rounded-md mb-2 md:min-w-[288px] md:min-h-[176px]">
               <Image
@@ -101,10 +100,9 @@ export default function ProduitsBody() {
                 src="/Images/Logo3.JPG"
               />
             </div>
-
-            <p className="text-base text-white md:text-lg">
-              Les viandes sont accompagnées de pommes de terre cuite vapeur puis
-              sautées a la poêle avec des oignons caramelisés.
+            <p className="text-base  text-white md:text-lg">
+              Les viandes sont accompagnées de pommes de terre cuites vapeur
+              puis sautées à la poêle avec des oignons caramélisés.
             </p>
           </div>
         </div>
