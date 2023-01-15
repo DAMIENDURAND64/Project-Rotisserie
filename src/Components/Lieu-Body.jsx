@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-function Lieu({ HandleChangeSpot, isChangeSpot }) {
+function Lieu() {
+  const [bassussarry, setBassussarry] = useState(true);
+  const [osses, setOsses] = useState(false);
+
+  const changeToOsses = () => {
+    setBassussarry(false);
+    setOsses(true);
+  };
+  const changeToBassussarry = () => {
+    setOsses(false);
+    setBassussarry(true);
+  };
+
   return (
     <div className="">
       <div className="py-6">
@@ -33,7 +45,7 @@ function Lieu({ HandleChangeSpot, isChangeSpot }) {
             className="rounded w-11/12 border-solid border-2 border-black md:w-1/2 h-96 md:flex md:items-center"
             title="emplacement à Bassussarry du mercredi au vendredi le midi et le soir ainsi qu'a Ossès le samedi et dimanche le midi uniquement "
             src={
-              isChangeSpot
+              bassussarry
                 ? "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d621.9501926698497!2d-1.487707637645706!3d43.42665880159738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd513fa64ba144e9%3A0xbb084fcb0ccd82c9!2sChezlolo!5e0!3m2!1sfr!2sfr!4v1667682244432!5m2!1sfr!2sfr"
                 : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d662.192537674905!2d-1.2992592985848705!3d43.23326854515506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51295acfc4d7c9%3A0x1ecd2725e480fda4!2sBoulangerie%20Artisanale%20ITHURRALDE!5e0!3m2!1sfr!2sfr!4v1667683088904!5m2!1sfr!2sfr"
             }
@@ -48,15 +60,23 @@ function Lieu({ HandleChangeSpot, isChangeSpot }) {
             <div className="flex gap-16 mt-2 md:flex-col md:gap-10">
               <motion.button
                 whileHover={{ scale: 1.2 }}
-                className="bg-[#906948] rounded-md text-xs w-24 h-8 text-white font-semibold bg-opacity-80 md:ml-20 md:text-base md:h-16 md:w-32"
-                onClick={HandleChangeSpot}
+                className={
+                  bassussarry
+                    ? "bg-white rounded-md text-xs w-24 h-12 px-3 text-[#906948] font-bold bg-opacity-80 md:ml-20 md:text-base md:h-16 md:w-32"
+                    : "bg-[#906948] rounded-md text-xs w-24 h-12 px-3 text-white font-semibold bg-opacity-80 md:ml-20 md:text-base md:h-16 md:w-32"
+                }
+                onClick={changeToBassussarry}
               >
                 Rond-point Bassussarry
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.2 }}
-                className="bg-[#906948] rounded-md text-xs w-24 h-8 text-white font-semibold bg-opacity-80 md:ml-20 md:text-base md:h-16 md:w-32"
-                onClick={HandleChangeSpot}
+                className={
+                  osses
+                    ? "bg-white rounded-md text-xs w-24 h-12 px-3 text-[#906948] font-bold bg-opacity-80 md:ml-20 md:text-base md:h-16 md:w-32"
+                    : "bg-[#906948] rounded-md text-xs w-24 h-12 px-3 text-white font-semibold bg-opacity-80 md:ml-20 md:text-base md:h-16 md:w-32"
+                }
+                onClick={changeToOsses}
               >
                 Boulangerie Ossès
               </motion.button>

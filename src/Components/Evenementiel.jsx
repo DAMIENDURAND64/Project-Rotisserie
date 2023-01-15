@@ -10,10 +10,10 @@ export default function Evenementiel() {
         <div className="flex justify-center items-center w-full text-white text-base md:text-lg md:w-3/4">
           La rôtisserie Harana est prête à revêtir son costume de traiteur pour
           des événements dans le cadre personnel (anniversaire, repas de
-          famille, baptêmes..) comme dans le cadre professionnel (repas
-          d&apos;entreprise..). <br />
-          N&apos;hésitez pas à nous contacter par téléphone si vous souhaitez
-          profiter d&apos;un repas simple et savoureux.
+          famille, baptême..) comme dans le cadre professionnel (repas
+          d&apos;entreprise..) . N&apos;hesitez pas à nous contacter par
+          téléphone si vous souhaitez profitez d&apos;un repas simple et
+          savoureux qui vous rappellera des souvenirs d&apos;enfances.
         </div>
       </div>
     </div>
