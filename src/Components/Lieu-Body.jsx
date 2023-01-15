@@ -51,10 +51,8 @@ function Lieu() {
             }
             width=""
             height="200"
-            frameborder="0"
             allowFullScreen
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <div>
             <div className="flex gap-16 mt-2 md:flex-col md:gap-10">
