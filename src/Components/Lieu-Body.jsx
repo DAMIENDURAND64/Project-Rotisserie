@@ -78,7 +78,7 @@ function Lieu() {
                 }
                 onClick={changeToOsses}
               >
-                Boulangerie Osses
+                Boulangerie Ossès
               </motion.button>
             </div>
           </div>
