@@ -1,12 +1,27 @@
 import React from "react";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+
 import PouletIparla from "./produits/PouletIparla";
 import PouletLabelRouge from "./produits/PouletLabelRouge";
 import PorcManex from "./produits/PorcManex";
 import Patates from "./produits/Patates";
 
-export default function ProduitsBody() {
+const variants = {
+  initial: {
+    y: 300,
+  },
+  animate: {
+    y: 0,
+
+    transition: {
+      type: "spring",
+      bounce: 0.5,
+      duration: 0.9,
+    },
+  },
+};
+
+function ProduitsBody() {
   return (
     <div>
       <div className="flex flex-col justify-center items-center py-6">
@@ -14,23 +29,44 @@ export default function ProduitsBody() {
           NOS PRODUITS
         </h1>
         <div className="flex flex-col justify-center items-center p-1 my-2  md:w-5/6 space-y-6">
-          <section>
+          <motion.section
+            initial={"initial"}
+            whileInView={"animate"}
+            viewport={{ once: true, amount: 0.1 }}
+            variants={variants}
+          >
             <PouletIparla />
-          </section>
+          </motion.section>
           <hr className="w-4/6 my-2"></hr>
-          <section>
+          <motion.section
+            initial={"initial"}
+            whileInView={"animate"}
+            viewport={{ once: true, amount: 0.1 }}
+            variants={variants}
+          >
             <PouletLabelRouge />
-          </section>
+          </motion.section>
           <hr className="w-4/6 my-2 "></hr>
-          <section>
+          <motion.section
+            initial={"initial"}
+            whileInView={"animate"}
+            viewport={{ once: true, amount: 0.1 }}
+            variants={variants}
+          >
             <PorcManex />
-          </section>
+          </motion.section>
           <hr className="w-4/6 my-2"></hr>
-          <section>
+          <motion.section
+            initial={"initial"}
+            whileInView={"animate"}
+            viewport={{ once: true, amount: 0.1 }}
+            variants={variants}
+          >
             <Patates />
-          </section>
+          </motion.section>
         </div>
       </div>
     </div>
   );
 }
+export default ProduitsBody;
