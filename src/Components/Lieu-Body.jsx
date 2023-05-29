@@ -21,10 +21,10 @@ function Lieu() {
           <h1 className="text-white text-base md:text-2xl font-bold h-14 w-full justify-center items-center flex bg-black-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-black-600">
             OU TROUVER LA ROTISSERIE HARANA ?
           </h1>
-          <div className="flex flex-col items-center py-4 gap-3 md:flex-row md:gap-32">
+          <div className="flex flex-col items-center py-4 gap-3 md:flex-row  ">
             <div className="bg-[#906948] p-2 text-white rounded-md w-2/3 text-sm flex flex-col bg-opacity-80 md:text-lg md:h-24 md:flex md:justify-center md:items-center">
               <p className="flex justify-center underline font-bold">
-                Mercredi au Vendredi :
+                Mercredi au Samedi :
               </p>
               <span className="flex text-center">
                 Midi et Soir au rond-point de Bassussarry
@@ -32,7 +32,7 @@ function Lieu() {
             </div>
             <div className="bg-[#906948] text-white rounded-md w-2/3 p-2 text-sm bg-opacity-80 md:text-lg md:h-24 ">
               <p className="flex justify-center underline font-bold ">
-                Samedi et Dimanche :
+                Dimanche :
               </p>
               <span className="flex text-center">
                 Midi uniquement à la boulangerie ITHURRALDE à Ossès
@@ -40,10 +40,10 @@ function Lieu() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center mb-2 md:flex-row md:ml-48 ">
+        <div className="flex flex-col justify-center items-center mb-2 md:flex-row md:px-16">
           <iframe
-            className="rounded w-11/12 border-solid border-2 border-black md:w-1/2 h-96 md:flex md:items-center"
-            title="emplacement à Bassussarry du mercredi au vendredi le midi et le soir ainsi qu'a Ossès le samedi et dimanche le midi uniquement "
+            className="rounded w-11/12 border-solid border-2 border-black h-96 md:flex md:items-center"
+            title="emplacement à Bassussarry en face de chez Lolo du mercredi au samedi le midi et le soir  ainsi qu'a Ossès le samedi et dimanche le midi uniquement "
             src={
               bassussarry
                 ? "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d621.9501926698497!2d-1.487707637645706!3d43.42665880159738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd513fa64ba144e9%3A0xbb084fcb0ccd82c9!2sChezlolo!5e0!3m2!1sfr!2sfr!4v1667682244432!5m2!1sfr!2sfr"

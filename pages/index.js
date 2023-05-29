@@ -14,12 +14,14 @@ export default function Home() {
         />
         <meta
           name="description"
-          content="Rotisserie qui propose des poulets fermiers à la rotissoire"
+          content="Rotisserie qui propose des poulets fermiers à la rotissoire ainsi que de l'échine de porc Manex et du jarret de porc Manex en provence de la ferme Belarrea. Present du mercredi au Samedi à Bassussarry au rond point Durruty (10min de Bayonne, Anglet et Biarritz ou BAB) avec le marchand de fruit et legumes de chez Lolo et le Dimanche à la boulangerie d'Osses."
         />
       </Head>
-      <Header />
-      <Body />
-      <Footer />
+      <div className="flex flex-col-reverse">
+        <Footer />
+        <Body />
+        <Header />
+      </div>
     </div>
   );
 }
