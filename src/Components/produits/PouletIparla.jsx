@@ -5,7 +5,7 @@ import Link from "next/link";
 function PouletIparla() {
   return (
     <div>
-      <div className="flex  items-center gap-2 md:gap-4  md:w-full px-3">
+      <div className="flex items-center gap-2 md:gap-4  md:w-full px-3">
         <div className="min-w-[80px] relative h-20 rounded-full overflow-hidden md:min-w-[144px] md:h-[144px]">
           <Link
             href={"https://app.cagette.net/ferme-iparla-etxaldea"}
