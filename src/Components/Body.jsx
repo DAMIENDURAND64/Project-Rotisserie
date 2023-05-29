@@ -12,7 +12,7 @@ function Body() {
      w-full flex flex-col h-auto "
     >
       <Carousel />
-      <div className="w-full h-full px-2 md:px-20">
+      <div className="w-full h-full px-2 md:px-10 ">
         <Lieu />
         <ProduitsBody />
         <Tarifs />
